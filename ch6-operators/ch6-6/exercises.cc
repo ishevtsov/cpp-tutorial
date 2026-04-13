@@ -21,7 +21,7 @@ int main()
     std::cout << "The class size is: " << classSize << std::endl;
 
     x = 2;
-    std::cout << (x < 0) ? "Negative" : "Non-negative"; // This line will not compile due to operator precedence
+    std::cout << (x < 0) ? "Negative" : "Non-negative"; // This line will retur 0 due to operator precedence
 
     return 0;
 }
