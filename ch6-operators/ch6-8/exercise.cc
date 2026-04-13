@@ -37,9 +37,8 @@ void logicalAND()
 
 int main()
 {
-    std::cout << (!5 || !6) << std::endl; // This will print 1 because both 5 and 6 are non-zero
-    // logicalNOT();
-    // logicalOR();
-    // logicalAND();
+    logicalNOT();
+    logicalOR();
+    logicalAND();
     return 0;
 }
