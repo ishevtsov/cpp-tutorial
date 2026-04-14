@@ -1,5 +1,6 @@
 #include <iostream>
 #include <bitset>
+#include <cstdint>
 
 void printBits()
 {
@@ -20,14 +21,14 @@ void printBits()
 
 void setBits()
 {
-    constexpr char isHungry{0};
-    constexpr char isSad{1};
-    constexpr char isMad{2};
-    constexpr char isHappy{3};
-    constexpr char isLaughing{4};
-    constexpr char isAsleep{5};
-    constexpr char isDead{6};
-    constexpr char isCrying{7};
+    constexpr std::uint8_t isHungry{0};
+    constexpr std::uint8_t isSad{1};
+    constexpr std::uint8_t isMad{2};
+    constexpr std::uint8_t isHappy{3};
+    constexpr std::uint8_t isLaughing{4};
+    constexpr std::uint8_t isAsleep{5};
+    constexpr std::uint8_t isDead{6};
+    constexpr std::uint8_t isCrying{7};
 
     std::bitset<8> mood{0b0000'0101}; // All bits are initially pattern 0000 0101
     mood.set(isHappy);                // Set the isHappy bit
