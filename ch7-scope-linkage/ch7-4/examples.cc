@@ -25,7 +25,7 @@ int main()
     std::cout << g_x << std::endl; // g_x is accessible here because it has external linkage
 
     Foo::g_x = 6;
-    std::cout << Foo::g_x << std::endl; // g_x in namespace
+    std::cout << Foo::g_x << std::endl; // g_x in namespace Foo is accessible here because it has external linkage
 
     return 0;
 }
